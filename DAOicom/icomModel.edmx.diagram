@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f04ba1a8f5e4badabaa9c18a901b8ed" Name="Diagram1">
+        <EntityTypeShape EntityType="icomModel.componentes" Width="1.5" PointX="13.875" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.equipoauxiliar" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.filtros" Width="1.5" PointX="13.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.maquinas" Width="1.5" PointX="6.875" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.mediciones" Width="1.5" PointX="9.875" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.medicionesfiltros" Width="1.5" PointX="9.875" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.puestos" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.refacciones_reporte" Width="1.5" PointX="9.875" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.reportes" Width="1.5" PointX="6.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.tipofallas" Width="1.5" PointX="3.125" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.tipomantenimientos" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="icomModel.usuarios" Width="1.5" PointX="3.25" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="icomModel.FK_mediciones_componentes" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_maquinas_equipoauxiliar" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_medicionesfiltros_filtros" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_mediciones_maquinas" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_medicionesfiltros_maquinas" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_maquinas" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_usuarios_puestos" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_refacciones_reporte_reportes" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_tipofallas" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_tipomantenimientos" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_usuarios_atiende" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_usuarios_realizo" ManuallyRouted="false" />
+        <AssociationConnector Association="icomModel.FK_reportes_usuarios_reporto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
